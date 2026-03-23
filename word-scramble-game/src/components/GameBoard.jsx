@@ -6,11 +6,15 @@ export default function GameBoard() {
   const [word, setWord] = useState(["", "", "", "", "", ""]);
 
   // fucntion to create the six components
-  function createBoxes() {
-    word.map((letter, index) => {
-      return (<LetterBox key={index} letter={letter} onChange={(event) => handleInput(index, event)}
-      />
-    );
+   function createBoxes() {
+    return word.map((letter, index) => {
+      return (
+        <LetterBox
+          key={index}
+          letter={letter}
+          onChange={(event) => handleInput(index, event)}
+        />
+      );
     });
   }
 
@@ -21,5 +25,9 @@ export default function GameBoard() {
     setWord(newWord);
   }
 
-  return <>{createBoxes()}</>;
+  return (
+  <div className="flex justify-center items-center gap-4 mt-10">
+    {createBoxes()}
+  </div>
+);
 }

@@ -8,7 +8,7 @@ function App() {
     <header>
       <Header/>
     </header>
-    <GameBoard/>זה לא עובד
+    <GameBoard/>
     </>
   );
 }
