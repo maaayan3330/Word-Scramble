@@ -1,4 +1,4 @@
-export default function GameOver({ status }) {
+export default function GameOver({ status , handleClick}) {
   if (!status) return null;
 
   return (
@@ -7,7 +7,9 @@ export default function GameOver({ status }) {
         <h2 className="text-3xl font-bold text-green-600">
           Correct 🎉
         </h2>
-        
+            <button onClick={handleClick} 
+             className="mt-5 px-5 py-2 rounded-xl bg-pink-500 text-white font-semibold shadow hover:bg-pink-600 transition"
+            >Play Again</button>
       </div>
     </div>
   );
