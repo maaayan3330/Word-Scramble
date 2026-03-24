@@ -1,6 +1,6 @@
 import { useState , useRef , useEffect} from "react";
 import LetterBox from "./LetterBox";
-import GameOver from "./gameOver";
+import GameOver from "./GameOver";
 import { words } from "../words";
 
 export default function GameBoard() {
