@@ -160,18 +160,21 @@ export default function GameBoard() {
         {createBoxes()}
       </div>
     </div>
-    <button
-      onClick={startNewGame}
-      className="mt-6 px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold shadow-lg hover:bg-pink-600 transition"
-    >
-      Change Word
-    </button>
-    <button
-      onClick={isHintUsed ? undefined : hint}
-      className="mt-6 px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold shadow-lg hover:bg-pink-600 transition"
-    >
-      Get an hint
-    </button>
+    <div className="mt-6 flex justify-center gap-4">
+      <button
+        onClick={startNewGame}
+        className="px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold shadow-lg hover:bg-pink-600 transition"
+      >
+        Change Word
+      </button>
+
+      <button
+        onClick={isHintUsed ? undefined : hint}
+        className="px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold shadow-lg hover:bg-pink-600 transition"
+      >
+        Get a hint
+      </button>
+    </div>
 
     <GameOver status={isWin} handleClick={startNewGame} />
   </div>
