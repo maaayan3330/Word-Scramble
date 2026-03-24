@@ -9,12 +9,12 @@ An interactive word puzzle game built with React and Vite.
 Unscramble the letters, guess the correct word, and challenge yourself with dynamic gameplay features.
 
 ## ✨ Features
-Random word generation from a word list
-Shuffled letters display
-Input boxes with strict typing order
-Hint system (reveals the first letter)
-🔁 “Play Again” and “Change Word” options
-🎨 Clean and modern UI with Tailwind styling
+* Random word generation from a word list 
+* Shuffled letters display
+* Input boxes with strict typing order
+* Hint system (reveals the first letter)
+* “Play Again” and “Change Word” options
+* Clean and modern UI with Tailwind styling
 
 
 ## 🛠 Built With
