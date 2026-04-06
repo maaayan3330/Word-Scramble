@@ -38,3 +38,5 @@ The goal was to practice:
 * Improving UI/UX with modern styling
 
 ## 📸 Screenshot
+<img width="1072" height="637" alt="image" src="https://github.com/user-attachments/assets/6c4a7f8b-ad6b-4de0-ba9c-062bebb4e334" />
+
