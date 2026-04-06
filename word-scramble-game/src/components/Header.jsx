@@ -1,26 +1,24 @@
-import { useState } from "react";
-
 export default function Header() {
   return (
-    <div className="pt-6">
-      <h1 className="flex justify-center gap-2 text-6xl font-bold drop-shadow-lg">
-        <span className="bg-red-400 text-white px-3 py-2 rounded-lg shadow rotate-[-5deg]">W</span>
-        <span className="bg-orange-400 text-white px-3 py-2 rounded-lg shadow rotate-[3deg]">O</span>
-        <span className="bg-yellow-400 text-white px-3 py-2 rounded-lg shadow rotate-[-3deg]">R</span>
-        <span className="bg-green-400 text-white px-3 py-2 rounded-lg shadow rotate-[4deg]">D</span>
-        <span className="mx-2"></span>
-        <span className="bg-blue-400 text-white px-3 py-2 rounded-lg shadow rotate-[-4deg]">S</span>
-        <span className="bg-indigo-400 text-white px-3 py-2 rounded-lg shadow rotate-[2deg]">C</span>
-        <span className="bg-purple-400 text-white px-3 py-2 rounded-lg shadow rotate-[-2deg]">R</span>
-        <span className="bg-pink-400 text-white px-3 py-2 rounded-lg shadow rotate-[3deg]">A</span>
-        <span className="bg-red-300 text-white px-3 py-2 rounded-lg shadow rotate-[-3deg]">M</span>
-        <span className="bg-orange-300 text-white px-3 py-2 rounded-lg shadow rotate-[4deg]">B</span>
-        <span className="bg-yellow-300 text-white px-3 py-2 rounded-lg shadow rotate-[-2deg]">L</span>
-        <span className="bg-green-300 text-white px-3 py-2 rounded-lg shadow rotate-[3deg]">E</span>
-      </h1>
-      <div className="mt-4 flex items-center justify-center gap-3">
+    <div className="pt-3 sm:pt-6">
+      <h1 className="flex flex-wrap justify-center gap-0.5 text-2xl font-bold drop-shadow-lg sm:gap-2 sm:text-4xl md:text-5xl lg:text-6xl">
         
-      </div>
+        <span className="rounded-md bg-red-400 px-1.5 py-0.5 text-white shadow rotate-[-5deg] sm:px-3 sm:py-2">W</span>
+        <span className="rounded-md bg-orange-400 px-1.5 py-0.5 text-white shadow rotate-[3deg] sm:px-3 sm:py-2">O</span>
+        <span className="rounded-md bg-yellow-400 px-1.5 py-0.5 text-white shadow rotate-[-3deg] sm:px-3 sm:py-2">R</span>
+        <span className="rounded-md bg-green-400 px-1.5 py-0.5 text-white shadow rotate-[4deg] sm:px-3 sm:py-2">D</span>
+
+        <span className="w-1 sm:w-4"></span>
+
+        <span className="rounded-md bg-blue-400 px-1.5 py-0.5 text-white shadow rotate-[-4deg] sm:px-3 sm:py-2">S</span>
+        <span className="rounded-md bg-indigo-400 px-1.5 py-0.5 text-white shadow rotate-[2deg] sm:px-3 sm:py-2">C</span>
+        <span className="rounded-md bg-purple-400 px-1.5 py-0.5 text-white shadow rotate-[-2deg] sm:px-3 sm:py-2">R</span>
+        <span className="rounded-md bg-pink-400 px-1.5 py-0.5 text-white shadow rotate-[3deg] sm:px-3 sm:py-2">A</span>
+        <span className="rounded-md bg-red-300 px-1.5 py-0.5 text-white shadow rotate-[-3deg] sm:px-3 sm:py-2">M</span>
+        <span className="rounded-md bg-orange-300 px-1.5 py-0.5 text-white shadow rotate-[4deg] sm:px-3 sm:py-2">B</span>
+        <span className="rounded-md bg-yellow-300 px-1.5 py-0.5 text-white shadow rotate-[-2deg] sm:px-3 sm:py-2">L</span>
+        <span className="rounded-md bg-green-300 px-1.5 py-0.5 text-white shadow rotate-[3deg] sm:px-3 sm:py-2">E</span>
+      </h1>
     </div>
   );
 }

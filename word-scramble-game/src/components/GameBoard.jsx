@@ -138,39 +138,41 @@ export default function GameBoard() {
   
 
   return (
-  <div className="mt-12 flex flex-col items-center" dir="ltr">
-    <div className="w-full max-w-5xl rounded-3xl bg-white/80 shadow-xl border border-slate-200 px-8 py-10">
-      <h2 className="text-center text-2xl font-bold text-slate-700">
+  <div className="mt-6 px-4 sm:mt-10 sm:px-6 flex flex-col items-center" dir="ltr">
+    <div className="w-full max-w-5xl rounded-3xl border border-slate-200 bg-white/80 px-4 py-6 shadow-xl sm:px-6 sm:py-8 md:px-8 md:py-10">
+      <h2 className="text-center text-xl font-bold text-slate-700 sm:text-2xl">
         Unscramble the word
       </h2>
 
-      <p className="mt-2 text-center text-slate-500 text-lg">
+      <p className="mt-2 text-center text-sm text-slate-500 sm:text-base md:text-lg">
         Arrange the letters in the correct order
       </p>
 
-      <div className="mt-8 flex justify-center">
-        <div className="rounded-2xl bg-gradient-to-r from-pink-100 via-violet-100 to-blue-100 px-8 py-4 shadow-md border border-violet-200">
-          <span className="text-3xl font-extrabold tracking-[0.4em] text-slate-700">
+      <div className="mt-6 flex justify-center sm:mt-8">
+        <div className="max-w-full rounded-2xl border border-violet-200 bg-gradient-to-r from-pink-100 via-violet-100 to-blue-100 px-4 py-3 shadow-md sm:px-6 sm:py-4 md:px-8">
+          <span className="block break-all text-center text-xl font-extrabold tracking-[0.2em] text-slate-700 sm:text-2xl sm:tracking-[0.3em] md:text-3xl md:tracking-[0.4em]">
             {shuffledWord}
           </span>
         </div>
       </div>
 
-      <div className="mt-10 flex justify-center items-center gap-4">
+      <div className="mt-8 flex flex-wrap justify-center items-center gap-2 sm:mt-10 sm:gap-3 md:gap-4">
         {createBoxes()}
       </div>
     </div>
-    <div className="mt-6 flex justify-center gap-4">
+
+    <div className="mt-5 flex w-full max-w-md flex-wrap justify-center gap-3 sm:mt-6 sm:gap-4">
       <button
         onClick={startNewGame}
-        className="px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold shadow-lg hover:bg-pink-600 transition"
+        className="min-w-[140px] rounded-2xl bg-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-pink-600 sm:px-6 sm:text-base"
       >
         Change Word
       </button>
 
       <button
         onClick={isHintUsed ? undefined : hint}
-        className="px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold shadow-lg hover:bg-pink-600 transition"
+        className="min-w-[140px] rounded-2xl bg-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-pink-600 disabled:opacity-50 disabled:cursor-not-allowed sm:px-6 sm:text-base"
+        disabled={isHintUsed}
       >
         Get a hint
       </button>

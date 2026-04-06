@@ -1,15 +1,19 @@
-export default function GameOver({ status , handleClick}) {
+export default function GameOver({ status, handleClick }) {
   if (!status) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-      <div className="bg-white px-10 py-8 rounded-3xl shadow-2xl border border-green-200 text-center">
-        <h2 className="text-3xl font-bold text-green-600">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+      <div className="w-full max-w-sm rounded-3xl border border-green-200 bg-white px-6 py-6 text-center shadow-2xl sm:px-10 sm:py-8">
+        <h2 className="text-2xl font-bold text-green-600 sm:text-3xl">
           Correct 🎉
         </h2>
-            <button onClick={handleClick} 
-             className="mt-5 px-5 py-2 rounded-xl bg-pink-500 text-white font-semibold shadow hover:bg-pink-600 transition"
-            >Play Again</button>
+
+        <button
+          onClick={handleClick}
+          className="mt-5 rounded-xl bg-pink-500 px-5 py-2 text-sm font-semibold text-white shadow transition hover:bg-pink-600 sm:text-base"
+        >
+          Play Again
+        </button>
       </div>
     </div>
   );
